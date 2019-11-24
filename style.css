@@ -1,0 +1,87 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.main-page-button {
+    padding: 30px 30px;
+    text-indent: 40px;
+    text-align: center;
+    color: var(--button);
+    background-color: var(--body);
+}
+
+:root {
+    --welcome_body: #31363F;
+    --welcome_text: #D6D8DA;
+    --menu: #24292E;
+    --body: #31363F;
+    --text: #F3F3F3;
+    --button: #D6D8DA;
+    --theme: #31363F;
+}
+
+#Welcome {
+    color: var(--welcome_text);
+    text-align: center;
+    border-style: none;
+    display: inline;
+    background-color: var(--welcome_body);
+    float: right;
+    border-radius: 25px;
+}
+
+body {
+    background-color: var(--theme);
+    margin: 0;
+}
+
+div>p {
+    text-align: center;
+    resize: 120%;
+    border-style: solid;
+    background-color: var(--body);
+    color: var(--text);
+    font-size: 50px;
+}
+
+div {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 11.76%;
+    background-color: var(--menu);
+    position: fixed;
+    height: 100%;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}

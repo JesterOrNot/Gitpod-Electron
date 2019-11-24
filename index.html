@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML-Note</title>
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/621f452ebe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<ul>
+		<div class="tooltip" align="right">
+			<button class="main-page-button" onclick="addNote()"><i class="fas fa-plus"></i></button>
+			<span id="tool" class="tooltiptext">Create a new note</span>
+		</div>
+		<br>
+		<div class="tooltip" align="right">
+			<button class="main-page-button" onclick="deleteAll()"><i class="fas fa-trash-alt"></i></button>
+			<span id="tool" class="tooltiptext">Trash All Notes</span>
+		</div>
+		<br>
+		<div class="tooltip">
+			<button class="main-page-button" onclick="toggleTheme()"><i class="fas fa-adjust"></i></button>
+			<span id="tool" class="tooltiptext">Toggle Theme</span>
+		</div>
+		<br>
+		<div class="tooltip">
+			<button class="main-page-button" onclick="wipPlaceHolder()"><i class="fas fa-user-friends"></i></button>
+			<span id="tool" class="tooltiptext">Sign in</span>
+		</div>
+		<br>
+		<div class="tooltip">
+			<button class="main-page-button" onclick="wipPlaceHolder()"><i class="fas fa-sign-out-alt"></i></button>
+			<span id="tool" class="tooltiptext">Sign out</span>
+		</div>
+		<br>
+		<div class="tooltip">
+			<button class="main-page-button" onclick="about()"><i class="far fa-question-circle"></i></button>
+			<span class="tooltiptext">about</span>
+		</div>
+	</ul>
+	<h1 id="Welcome">Welcome HTML-Note!</h1>
+	<br>
+	<div id="div1" style="margin-left:25%;padding:1px 16px;height:1000px;"></div>
+</body>
+
+</html>
