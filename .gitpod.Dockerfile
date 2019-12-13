@@ -10,7 +10,12 @@ RUN apt-get update \
     # native-keymap
     && apt-get install -y libx11-dev libxkbfile-dev \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-
+RUN sudo apt-get update \
+ && sudo apt-get install -y \
+  libasound2-dev \
+  libgtk-3-dev \
+  libnss3-dev \
+ && sudo rm -rf /var/lib/apt/lists/*
 USER gitpod
 # Apply user-specific settings
 RUN bash -c ". .nvm/nvm.sh \
