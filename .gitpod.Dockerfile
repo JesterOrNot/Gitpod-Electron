@@ -1,5 +1,5 @@
 FROM gitpod/workspace-full-vnc
-ARG DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND noninteractive
 RUN sudo apt-get update && sudo apt-get install -y build-essential clang libdbus-1-dev libgtk-3-dev \
     libnotify-dev libgnome-keyring-dev \
     libasound2-dev libcap-dev libcups2-dev libxtst-dev \
